@@ -18,11 +18,11 @@ public class Exercicio8 {
     public static void checkIfIsPalindrome(String word) {
         StringBuilder reverseString = new StringBuilder();
 
-        for (int i = (word.length() - 1); i >= 0; i--) {
+        for(int i = (word.length() - 1); i >= 0; i--) {
             reverseString.append(word.charAt(i));
         }
 
-        if (word.equalsIgnoreCase(reverseString.toString())) {
+        if(word.equalsIgnoreCase(reverseString.toString())) {
             System.out.println(word + " é um palíndromo.");
         } else {
             System.out.println(word + " não é um palíndromo.");
