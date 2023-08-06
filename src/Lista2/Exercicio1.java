@@ -1,6 +1,6 @@
 // Qual a saída do seguinte programa:
 
-/*class teste {
+/* class teste {
     public static void main( String args[] ){
         int i = 5;
         int j = i;
