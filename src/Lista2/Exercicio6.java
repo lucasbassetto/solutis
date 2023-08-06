@@ -1,5 +1,6 @@
 // Imprima produto dos números de ímpares de 15 a 30, usando os tipos de
 // dados int e float
+
 package Lista2;
 
 public class Exercicio6 {
