@@ -1,3 +1,8 @@
+
+// Crie uma classe e na função main() implemente um programa que lê um
+// número inteiro do teclado e imprime todos os números primos menores que ele
+// (divisíveis por 1 ou por ele mesmo).
+
 package Lista2;
 
 import java.util.Scanner;
