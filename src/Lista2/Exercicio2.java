@@ -14,7 +14,6 @@ public class Exercicio2 {
         double y = sc.nextInt();
 
         System.out.println(maxValue(x, y));
-
     }
     public static double maxValue(double x, double y) {
         return Math.max(x, y);
