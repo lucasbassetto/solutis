@@ -1,3 +1,5 @@
+// Verifique se o usuário é maior de idade ou não.
+
 package Lista3;
 
 import java.util.Locale;
