@@ -1,14 +1,11 @@
-// A partir de 3 notas fornecidas de um aluno, informe se ele foi aprovado, ficou de
-// recuperação ou foi reprovado. A média de aprovação é >= 7.0; a média de recuperação é
-// >= 5.0 e < 7.0; e a média do reprovado é <; 5.0
 package Lista3;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class _12_Nota {
-
+public class _13_NotaPT2 {
     public static void main(String[] args) {
+
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
@@ -26,6 +23,17 @@ public class _12_Nota {
         String status = determineStatus(average);
 
         System.out.println("Status do estudante: " + status);
+
+        if (status.equalsIgnoreCase("Recuperação")) {
+            System.out.println("O estudante está de recuperação e erá realizar uma prova final.");
+            System.out.println("Digite a nota da prova final: ");
+            double finalExamGrade = sc.nextDouble();
+
+            double finalAverage = (average + finalExamGrade) / 2;
+
+            String finalStatus = determineFinalStatus(finalAverage);
+            System.out.println("Status final do estudante: " + finalStatus);
+        }
     }
 
     public static double calculateAverage(double grade1, double grade2, double grade3) {
@@ -39,6 +47,14 @@ public class _12_Nota {
             return "Recuperação";
         } else {
             return "Reprovado";
+        }
+    }
+
+    public static String determineFinalStatus(double finalAverage) {
+        if (finalAverage >= 5) {
+            return "Aprovado no exame final";
+        } else {
+            return "Reprovado após realizar o exame final";
         }
     }
 }
