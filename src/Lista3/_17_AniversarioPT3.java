@@ -1,9 +1,10 @@
-// Acrescente no exercício anterior se a pessoa nasceu no 1º, 2º, 3º ou 4º trimestre.
+// Acrescente no exercício anterior a apresentação do signo do horóscopo da pessoa.
+
 package Lista3;
 
 import java.util.Scanner;
 
-public class _16_AniversarioPT2 {
+public class _17_AniversarioPT3 {
 
     public static void main(String[] args) {
 
@@ -20,7 +21,8 @@ public class _16_AniversarioPT2 {
         if (isValid) {
             String monthName = getMonthName(month);
             int quarter = getQuarter(month);
-            System.out.println("Aniversário válido! Mês: " + monthName + ", Trimestre: " + quarter);
+            String zodiacSign = getZodiacSign(month, day);
+            System.out.println("Aniversário válido! Mês: " + monthName + ", Trimestre: " + quarter + ", Signo: " + zodiacSign);
         } else {
             System.out.println("Aniversário inválido");
         }
@@ -46,7 +48,7 @@ public class _16_AniversarioPT2 {
 
     public static String getMonthName(int month) {
         String[] monthNames = {
-                "Janeiro", "Fevereiro", "Março", "Abril", "May", "Junho",
+                "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
                 "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
         };
 
@@ -68,5 +70,32 @@ public class _16_AniversarioPT2 {
             return 4;
         }
     }
-}
 
+    public static String getZodiacSign(int month, int day) {
+        if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
+            return "Áries";
+        } else if (month == 4 || month == 5 && day <= 20) {
+            return "Touro";
+        } else if (month == 5 || month == 6 && day <= 20) {
+            return "Gêmeos";
+        } else if (month == 6 || month == 7 && day <= 22) {
+            return "Câncer";
+        } else if (month == 7 || month == 8 && day <= 22) {
+            return "Leão";
+        } else if (month == 8 || month == 9 && day <= 22) {
+            return "Virgem";
+        } else if (month == 9 || month == 10 && day <= 22) {
+            return "Libra";
+        } else if (month == 10 || month == 11 && day <= 21) {
+            return "Escorpião";
+        } else if (month == 11 || month == 12 && day <= 21) {
+            return "Sagitário";
+        } else if (month == 12 || month == 1 && day <= 19) {
+            return "Capricórnio";
+        } else if (month == 1 || month == 2 && day <= 18) {
+            return "Aquário";
+        } else {
+            return "Peixes";
+        }
+    }
+}

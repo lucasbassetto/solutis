@@ -1,3 +1,5 @@
+//Acrescente no problema anterior possibilidade dele fazer prova final em caso de
+//recuperação. Neste caso a nota de aprovação passa a ser &gt;= 5.0
 package Lista3;
 
 import java.util.Locale;

@@ -1,3 +1,4 @@
+// Receba do usuário o nome de um mês. Exiba o número equivalente.
 package Lista3;
 
 import java.util.Scanner;
