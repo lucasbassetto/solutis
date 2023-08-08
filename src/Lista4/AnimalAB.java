@@ -2,58 +2,64 @@ package Lista4;
 
 public abstract class AnimalAB implements AnimalIF {
 
-    private double massa;
-    private double tempo;
-    private double distancia;
+    private String nome;
+    private String tipoAnimal;
+    private Integer idade;
+    private String habitat;
 
     public AnimalAB() {
     }
 
-    public AnimalAB(double massa, double tempo, double distancia) {
-        this.massa = massa;
-        this.tempo = tempo;
-        this.distancia = distancia;
+    public AnimalAB(String nome, String tipoAnimal, int idade, String habitat) {
+        this.nome = nome;
+        this.tipoAnimal = tipoAnimal;
+        this.idade = idade;
+        this.habitat = habitat;
     }
 
-    public double getMassa() {
-        return massa;
+    public String getNome() {
+        return nome;
     }
 
-    public void setMassa(double massa) {
-        this.massa = massa;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public double getTempo() {
-        return tempo;
+    public String getTipoAnimal() {
+        return tipoAnimal;
     }
 
-    public void setTempo(double tempo) {
-        this.tempo = tempo;
+    public void setTipoAnimal(String tipoAnimal) {
+        this.tipoAnimal = tipoAnimal;
     }
 
-    public double getDistancia() {
-        return distancia;
+    public Integer getIdade() {
+        return idade;
     }
 
-    public void setDistancia(double distancia) {
-        this.distancia = distancia;
+    public void setIdade(Integer idade) {
+        this.idade = idade;
     }
 
+    public String getHabitat() {
+        return habitat;
+    }
+
+    public void setHabitat(String habitat) {
+        this.habitat = habitat;
+    }
     @Override
     public void comer(double massa) {
-        this.massa = massa;
-        System.out.println("Comeu " + massa + " Kg de alimento");
+        System.out.println("O animal comeu " + massa + " Kg de alimento para cachorro");
     }
 
     @Override
     public void moverse(double distancia) {
-        this.distancia = distancia;
-        System.out.println("Moveu-se " + distancia + " Km");
+        System.out.println("O animal moveu-se " + distancia + " Km");
     }
 
     @Override
     public void dormir(double tempo) {
-        this.tempo = tempo;
-        System.out.println("Dormiu " + tempo + " horas.");
+        System.out.println("O animal dormiu " + tempo + " horas.");
     }
 }
