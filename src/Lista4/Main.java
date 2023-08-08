@@ -7,6 +7,7 @@ public class Main {
         Gato gato = new Gato("Flint", "Terrestre", 2, "Casa", 4);
         Elefante elefante = new Elefante("Dumbo", "Terrestre", 2, "Savana", 4);
         Peixe peixe = new Peixe("Nemo", "Marinho", 1, "Oceano", 2);
+        Pombo pombo = new Pombo("Brad", "Voador", 1, "Terra", 1);
 
         cachorro.moverse(2);
         cachorro.comer(12);
@@ -25,6 +26,11 @@ public class Main {
 
         peixe.moverse(3);
         peixe.comer(2);
-        peixe.moverse(10);
+        peixe.dormir(2);
+        System.out.println();
+
+        pombo.moverse(1);
+        pombo.comer(1);
+        pombo.dormir(1);
     }
 }

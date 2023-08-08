@@ -19,7 +19,7 @@ public abstract class AnimalTerrestreAB extends AnimalAB {
 
     @Override
     public void comer(double massa) {
-        System.out.println("O animal terrestre comeu " + massa + " Kg de alimento para cachorro");
+        System.out.println("O animal terrestre comeu " + massa + " Kg de alimento animal terrestre");
     }
 
     @Override

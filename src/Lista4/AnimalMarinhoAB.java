@@ -19,7 +19,7 @@ public abstract class AnimalMarinhoAB extends AnimalAB {
 
     @Override
     public void comer(double massa) {
-        System.out.println("O animal marinho comeu " + massa + " Kg de alimento para peixe");
+        System.out.println("O animal marinho comeu " + massa + " Kg de alimento para animal marinho");
     }
 
     @Override
