@@ -38,5 +38,4 @@ public abstract class FuncionarioEscolaridade extends Funcionario {
     public void setUniversidade(String universidade) {
         this.universidade = universidade;
     }
-    public abstract double calcularRendaTotal();
 }

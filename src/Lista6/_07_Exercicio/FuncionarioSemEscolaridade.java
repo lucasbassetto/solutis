@@ -6,6 +6,11 @@ public class FuncionarioSemEscolaridade extends Funcionario {
     }
 
     @Override
+    public double calcularRendaTotal() {
+        return getRenda();
+    }
+
+    @Override
     public String toString() {
         return "Nome: " + getNome()
                 + "\nCódigo Funcional: " + getCodigoFuncional()

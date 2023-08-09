@@ -32,4 +32,5 @@ public abstract class Funcionario {
     public Double getRenda() {
         return renda;
     }
+    public abstract double calcularRendaTotal();
 }
