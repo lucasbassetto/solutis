@@ -1,9 +1,5 @@
 package Lista6._03_Exercicio;
 
-import Lista6._02_Exercicio.Cachorro;
-import Lista6._02_Exercicio.Cavalo;
-import Lista6._02_Exercicio.Preguica;
-
 public class Main {
     public static void main(String[] args) {
 

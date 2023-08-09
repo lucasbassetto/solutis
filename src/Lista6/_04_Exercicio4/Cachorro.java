@@ -1,5 +1,7 @@
-package Lista6._03_Exercicio;
-public class Cachorro extends Animal {
+package Lista6._04_Exercicio4;
+
+
+public class Cachorro extends Animal implements Correr {
 
     public Cachorro(String name, Integer idade) {
         super(name, idade);
@@ -12,6 +14,6 @@ public class Cachorro extends Animal {
 
     @Override
     public void correr() {
-        System.out.println("Cachorro correndo");
+        System.out.println("O cachorro está correndo!");
     }
 }

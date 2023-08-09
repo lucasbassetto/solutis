@@ -1,4 +1,5 @@
-package Lista6._03_Exercicio;
+package Lista6._04_Exercicio4;
+
 public class Preguica extends Animal {
 
     public Preguica(String name, Integer idade) {
