@@ -1,6 +1,7 @@
-package Lista6._05_Exercicio;
+package Lista6._06_Exercicio;
 
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -30,18 +31,18 @@ public class Main {
                 funcionario = new FuncionarioEnsinoBasico(nome, codigoFuncional, basicoEnsinoBasico);
                 break;
             case 3:
-                System.out.println("Por favor, digite a escola de ensino básico: ");
+                System.out.print("Por favor, digite a escola de ensino básico: ");
                 String medioEnsinoBasico = sc.nextLine();
                 System.out.print("Por favor, digite a escola de ensino médio: ");
                 String medioEnsinoMedio = sc.nextLine();
                 funcionario = new FuncionarioEnsinoMedio(nome, codigoFuncional, medioEnsinoBasico , medioEnsinoMedio);
                 break;
             case 4:
-                System.out.println("Por favor, digite a escola de ensino básico: ");
+                System.out.print("Por favor, digite a escola de ensino básico: ");
                 String graduadoEnsinoBasico = sc.nextLine();
                 System.out.print("Por favor, digite a escola de ensino médio: ");
                 String graduadoEnsinoMedio = sc.nextLine();
-                System.out.println("Por favor, digite a universidade");
+                System.out.print("Por favor, digite a universidade: ");
                 String graduadoUniversidade = sc.nextLine();
                 funcionario = new FuncionarioUniversidade(nome, codigoFuncional, graduadoEnsinoBasico, graduadoEnsinoMedio, graduadoUniversidade);
                 break;
@@ -49,6 +50,5 @@ public class Main {
 
         System.out.println("\nInformações do funcionário: ");
         System.out.println(funcionario);
-
     }
 }
