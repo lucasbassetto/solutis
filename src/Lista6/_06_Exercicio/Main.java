@@ -46,6 +46,8 @@ public class Main {
                 String graduadoUniversidade = sc.nextLine();
                 funcionario = new FuncionarioUniversidade(nome, codigoFuncional, graduadoEnsinoBasico, graduadoEnsinoMedio, graduadoUniversidade);
                 break;
+            default:
+                System.out.println("Inválido");
         }
 
         System.out.println("\nInformações do funcionário: ");
