@@ -14,13 +14,14 @@ public class Main {
         double rendaTotalSuperior = 0;
 
         for (Funcionario funcionario : funcionarios) {
+            funcionario.calcularRendaTotal();
 
             if (funcionario instanceof FuncionarioEnsinoBasico) {
-                rendaTotalBasica += ((FuncionarioEnsinoBasico) funcionario).calcularRendaTotal();
+                rendaTotalBasica += funcionario.calcularRendaTotal();
             } else if (funcionario instanceof FuncionarioEnsinoMedio) {
-                rendaTotalMedio += ((FuncionarioEnsinoMedio) funcionario).calcularRendaTotal();
+                rendaTotalMedio += funcionario.calcularRendaTotal();
             } else if (funcionario instanceof FuncionarioUniversidade) {
-                rendaTotalSuperior += ((FuncionarioUniversidade) funcionario).calcularRendaTotal();
+                rendaTotalSuperior += funcionario.calcularRendaTotal();
             }
             custoTotal = rendaTotalBasica + rendaTotalMedio + rendaTotalSuperior;
 
